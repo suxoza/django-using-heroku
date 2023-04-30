@@ -20,5 +20,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # self
     path("api/", include("apis.urls")),
+    path("app/", include("todos.urls")),
     path("", include("books.urls")),
 ]
